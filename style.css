@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Sniglet', cursive;
+}
+
+body{
+    
+}
+
+.main{
+    height: 100vh;
+    padding: 55px; 
+    background-image: linear-gradient(to bottom right, #032C6A, #040D21, #040D21, #040D21, #421D45);
+    /* font-family: 'Sniglet', cursive; */
+    font-size: 22px;
+}
+
+.auth{
+    width: 350px;
+    height: 474px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1.5px solid #CEAF0E;
+    border-radius: 13px;
+    background-color: #090D2E;
+}
+
+#login-form{
+    /* font-family: 'Sniglet', cursive; */
+}
+
+input[type=text], input[type=password]{
+    /* font-family: 'Sniglet', cursive; */
+    width: 100%;
+    padding: 12px 78px;
+    margin: 8px 0;
+    display: inline-block;
+    background: #C4C4C4;
+    color: #785B5B;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 19px;
+    /* outline: none; */
+  }
+
+  input[type=password]{
+      
+  }
