@@ -29,6 +29,7 @@ body{
     border: 1.5px solid #CEAF0E;
     border-radius: 13px;
     background-color: #090D2E;
+    text-align: center;
 }
 
 #login-form{
@@ -49,6 +50,19 @@ input[type=text], input[type=password]{
     /* outline: none; */
   }
 
-  input[type=password]{
-      
+  #login-submit{
+    width: 55%;
+    padding: 8px 47px;
+    margin: 40px 0;
+    display: inline-block;
+    background: #1F3649;
+    color: #785B5B;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 19px;
+
+  }
+  #login-signup-link{
+      display: block;
+      padding: 18px;
   }
