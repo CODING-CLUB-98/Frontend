@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 
 /*reset*/
 *{
@@ -48,9 +49,9 @@ input[type=text], input[type=password]{
     border-radius: 13px;
     font-size: 19px;
     /* outline: none; */
-  }
+}
 
-  #login-submit{
+#login-submit{
     width: 55%;
     padding: 8px 47px;
     margin: 40px 0;
@@ -60,11 +61,117 @@ input[type=text], input[type=password]{
     border: 1px solid black;
     border-radius: 13px;
     font-size: 19px;
+}
 
-  }
-  #login-signup-link{
-      display: block;
-      padding: 18px;
-      color: #136EC2;
-      font-size: 18px;
-  }
+#login-signup-link{
+    display: block;
+    padding: 18px;
+    color: #136EC2;
+    font-size: 18px;
+}
+
+  /*....menu...*/
+
+.main .menu-sidebar{
+    background: linear-gradient(to bottom right, #032C6A, #040D21, #040D21, #040D21);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    border-right: 1px solid #CEAF0E;
+}
+.main .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.main .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid #C4C4C4;
+}
+.main .profile h3{
+    color: #F8AF5B;
+    margin: 10px 0 5px;
+    font-family: Revalia;
+    font-size: 17px;
+}
+.main .profile p{
+    color: #BFBAB7;
+    font-size: 14px;
+    margin: 19px 0px -8px 0px;
+}
+.main .menu-sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    /* border-bottom: 0.1px solid #CEAF0E;  maybe a divider? */
+    color: rgb(241, 237, 237);
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+.main .menu-sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.main .menu-sidebar ul li a:hover,
+.main .menu-sidebar ul li a.active{
+    color: #d20707;
+    background:rgba(3, 0, 29, 0.384);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+.main .menu-sidebar ul li a:hover .icon,
+.main .menu-sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+.main .menu-sidebar ul li a:hover:before,
+.main .menu-sidebar ul li a.active:before{
+    display: block;
+}
+.main .section{
+    width: calc(100% - 120px);
+    margin-left: 175px;
+    transition: all 0.5s ease;
+}
+.main .section .top_navbar{
+    /* background: rgb(7, 105, 185); */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 55px;
+    border-bottom: 1px solid #CEAF0E;
+    color: white;
+}
+.main .section .top_navbar .hamburger{
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+.main .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+.main .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+    
+.main .section .container{
+    /* background: #fff; */
+    color: white;
+    padding: 50px;
+    line-height: 28px;
+}
+    
+body.active .main .menu-sidebar{
+    left: -225px;
+}
+    
+body.active .main .section{
+    margin-left: 0;
+    width: 100%;
+}
