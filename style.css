@@ -10,13 +10,13 @@
     font-family: 'Sniglet', cursive;
 }
 
-body{
-    
-}
+/* html, body{
+    height: 100%;
+} */
 
 .main{
     height: 100vh;
-    padding: 55px; 
+    padding: 27px 55px 0px 55px; 
     background-image: linear-gradient(to bottom right, #032C6A, #040D21, #040D21, #040D21, #421D45);
     /* font-family: 'Sniglet', cursive; */
     font-size: 22px;
@@ -68,6 +68,7 @@ input[type=text], input[type=password]{
     padding: 18px;
     color: #136EC2;
     font-size: 18px;
+    text-decoration: none;
 }
 
   /*....menu...*/
@@ -163,7 +164,7 @@ input[type=text], input[type=password]{
 .main .section .container{
     /* background: #fff; */
     color: white;
-    padding: 50px;
+    padding: 50px 33px 2px 33px;
     line-height: 28px;
 }
     
@@ -175,3 +176,24 @@ body.active .main .section{
     margin-left: 0;
     width: 100%;
 }
+
+.main .container .settings-form{
+    padding: 0px 35px;
+    margin: 0px auto;
+}
+
+.main .container .form-div input[type=text], .main .container .form-div input[type=password], .main .container .form-div select{
+    width: 79%;
+    padding: 5px 78px;
+    margin: 12px 0;
+    display: inline-block;
+    background: #1F3649;
+    color: #cb5cdf;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 20px;
+}
+.main .container .form-div{
+    margin: 0px 0px 0px 260px;
+}
+

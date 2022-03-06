@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- <link href='https://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet'> -->
     <title> Profile </title>
 </head>
@@ -28,16 +28,57 @@
                     <h3> Isabella Ava </h3>
                     <p> S7 - 51 </p>
                 </div>
-                <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="sem">Semester:</label><br>
-                    <input type="text" id="sem" name="sem">
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username">
-                    <label for="pass">Password:</label><br>
-                    <input type="password" id="pass" name="pass">
+                <table class="form-div">
+                    
+                    <form class="settings-form">
+                        <tr>
+                            <td>
+                                <label for="name">Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" name="name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="sem">Semester:</label>
+                            </td>
+                            <td>
+                                <!-- <input type="text" id="sem" name="sem"> -->
+                                <select id="sem-select" name="sem">
+                                    <option value="s1">S1</option>
+                                    <option value="s2">S2</option>
+                                    <option value="s3">S3</option>
+                                    <option value="s4">S4</option>
+                                    <option value="s5">S5</option>
+                                    <option value="s6">S6</option>
+                                    <option value="s7">S7</option>
+                                    <option value="s8">S8</option>
+                                  </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="username">Username:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="username" name="username">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="pass">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="pass" name="pass">
+                            </td>
+                        </tr>
+
                   </form>
+                
             </div>
     
         </div>
@@ -50,31 +91,31 @@
             <ul>
                 <li>
                     <a href="#" class="active">
-                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
                         <span class="item">Lab</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="icon"><i class="far fa-keyboard"></i></span>
                         <span class="item">Exam</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="icon"><i class="fas fa-book"></i></span>
                         <span class="item">Resources</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="icon"><i class="fas fa-cog"></i></span>
                         <span class="item">Profile Settings</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
                         <span class="item">Logout</span>
                     </a>
                 </li>
