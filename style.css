@@ -167,6 +167,26 @@ input[type=text], input[type=password]{
     padding: 50px 33px 2px 33px;
     line-height: 28px;
 }
+
+.main .section .labs-grid-container{
+    /* background: #fff; */
+    color: white;
+    padding: 45px 90px 30px 90px;
+    line-height: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main .section .labs-grid-container .lab-items{
+    height: 190px;
+    width: 370px;
+    margin: 20px auto;
+    padding: 75px;
+    background-color: #0C162D;
+    border: 1px solid #CEAF0E;
+    border-radius: 13px;
+    text-align: center;
+}
+
     
 body.active .main .menu-sidebar{
     left: -225px;
