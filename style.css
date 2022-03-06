@@ -10,16 +10,15 @@
     font-family: 'Sniglet', cursive;
 }
 
-/* html, body{
-    height: 100%;
-} */
+html,body { height:100%; }
 
 .main{
-    height: 100vh;
+    height: 100%;
     padding: 27px 55px 0px 55px; 
     background-image: linear-gradient(to bottom right, #032C6A, #040D21, #040D21, #040D21, #421D45);
     /* font-family: 'Sniglet', cursive; */
     font-size: 22px;
+    overflow: auto;
 }
 
 .auth{
@@ -136,6 +135,7 @@ input[type=text], input[type=password]{
     display: block;
 }
 .main .section{
+    /* height: 100%; */
     width: calc(100% - 120px);
     margin-left: 175px;
     transition: all 0.5s ease;
@@ -186,6 +186,29 @@ input[type=text], input[type=password]{
     border-radius: 13px;
     text-align: center;
 }
+
+.main .section .resources-container{
+    color: white;
+    padding: 45px 90px 30px 90px;
+    /* line-height: 28px; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+.main .section .resources-container .resource-items{
+    height: 220px;
+    width: 100%;
+    
+    background-color: #0C162D;
+    border: 1px solid #CEAF0E;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.main .section .resources-container .resource-items .resource-table{
+    height: 220px;
+    width: 100%;
+}
+
 
     
 body.active .main .menu-sidebar{
