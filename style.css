@@ -226,8 +226,8 @@ body.active .main .section{
 }
 
 .main .container .form-div input[type=text], .main .container .form-div input[type=password], .main .container .form-div select{
-    width: 79%;
-    padding: 5px 78px;
+    width: 90%;
+    padding: 5px 5px;
     margin: 12px 0;
     display: inline-block;
     background: #1F3649;
@@ -237,6 +237,7 @@ body.active .main .section{
     font-size: 20px;
 }
 .main .container .form-div{
-    margin: 0px 0px 0px 260px;
+    /* margin: 0px 0px 0px 260px; */
+    margin: 0px auto;
 }
 
